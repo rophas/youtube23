@@ -22,7 +22,7 @@ const Gig = () => {
               <span>5</span>
             </div>
           </div>
-          <Slider slidesToShow={1} arrowsScroll={1}>
+          <Slider slidesToShow={1} arrowsScroll={1} className="slider">
             <img
                 src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
@@ -105,7 +105,7 @@ const Gig = () => {
               <h2>Reviews</h2>
               <div className="item">
                 <div className="user">
-                  <img src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+                  <img className="pp" src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                   <div className="info">
                     <span>Roph Ed</span>
                     <div className="country">
@@ -141,7 +141,7 @@ const Gig = () => {
               <hr />
               <div className="item">
                 <div className="user">
-                  <img src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+                  <img className="pp" src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                   <div className="info">
                     <span>Roph Ed</span>
                     <div className="country">
@@ -177,7 +177,7 @@ const Gig = () => {
               <hr />
               <div className="item">
                 <div className="user">
-                  <img src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+                  <img className="pp" src="https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                   <div className="info">
                     <span>Roph Ed</span>
                     <div className="country">
@@ -212,7 +212,44 @@ const Gig = () => {
               </div>
             </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="price">
+            <h3>1 AI Generated Image</h3>
+            <h2>$ 59.99</h2>
+          </div>
+          <p>
+            I will create a distinct high quality AI generated image on a description you provide
+          </p>
+          <div className="details">
+            <div className="item">
+              <img src="/img/clock.png" alt="" />
+              <span>2 Days Delivery</span>
+            </div>
+            <div className="item">
+              <img src="/img/recycle.png" alt="" />
+              <span>3 Revisions</span>
+            </div>
+          </div>
+          <div className="features">
+            <div className="item">
+              <img src="/img/greencheck.png" alt="" />
+              <span>Prompt Writing</span>
+            </div>
+            <div className="item">
+              <img src="/img/greencheck.png" alt="" />
+              <span>Prompt Writing</span>
+            </div>
+            <div className="item">
+              <img src="/img/greencheck.png" alt="" />
+              <span>Prompt Writing</span>
+            </div>
+            <div className="item">
+              <img src="/img/greencheck.png" alt="" />
+              <span>Prompt Writing</span>
+            </div>
+          </div>
+          <button>Continue</button>
+        </div>
       </div>
     </div>
   )
