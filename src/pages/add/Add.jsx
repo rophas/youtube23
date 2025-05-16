@@ -22,9 +22,32 @@ const Add = () => {
             <label htmlFor="">Upload Images</label>
             <input type="file" multiple />
             <label htmlFor="">Description</label>
-            <textarea name="" id="" cols="30" rows="16"></textarea>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="16"
+              placeholder="Brief description to introduce your service to customers">
+            </textarea>
+            <button>Create</button>
           </div>
-          <div className="right"></div>
+          <div className="right">
+            <label htmlFor="">Service Title</label>
+            <input type="text" placeholder='e.g. 1-page web design' />
+            <label htmlFor="">Short Description</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder='Description of your service'></textarea>
+            <label htmlFor="">Delivery Time (e.g. 3 days)</label>
+            <input type="number" min={1} />
+            <label htmlFor="">Revision Number</label>
+            <input type="number" min={1} />
+            <label htmlFor="">Add Features</label>
+            <input type="text" placeholder='e.g. page design' />
+            <input type="text" placeholder='e.g. file uploading' />
+            <input type="text" placeholder='e.g. setting up a domain' />
+            <input type="text" placeholder='e.g. hosting' />
+            <label htmlFor="">Price</label>
+            <input type="number" min={3} />
+          </div>
         </div>
       </div>
     </div>
