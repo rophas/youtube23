@@ -49,6 +49,7 @@ const Gigs = () => {
       </div>
     </div>
   )
+  
 }
 
 export default Gigs

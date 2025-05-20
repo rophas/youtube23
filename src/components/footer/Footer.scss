@@ -10,7 +10,7 @@
     }
 
     .container {
-        width: 1400px;
+        width: 1300px;
         .top {
             display: flex;
             justify-content: space-between;
@@ -32,7 +32,7 @@
         }
 
         hr {
-            margin: 50px 0px;
+            margin: 30px 0px;
             height: 0;
             border: 1px solid rgb(237, 235, 235);
         }
@@ -41,6 +41,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin: 30px 0px;
 
             .left {
                 display: flex;
