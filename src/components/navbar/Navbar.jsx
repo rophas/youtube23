@@ -20,9 +20,13 @@ function Navbar() {
     };
   }, []);
 
-  const [currentUser, setCurrentUser] = useState(() => {
-    JSON.parse(localStorage.getItem("currentUser")) || null;
-  });
+  useEffect(() => {
+    setCurrentUser(JSON.parse(localStorage.getItem("currentUser")) || null);
+  }, [pathname]);
+
+  const [currentUser, setCurrentUser] = useState(() =>
+    JSON.parse(localStorage.getItem("currentUser")) || null
+  );
 
   const navigate = useNavigate();
 
@@ -83,7 +87,7 @@ function Navbar() {
             </div>
           ) : (
             <>
-              <span>Sign in</span>
+              <Link to="/login" className="link">Sign in</Link>
               <Link className="link" to="/register">
                 <button>Join</button>
               </Link>
